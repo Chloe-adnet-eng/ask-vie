@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ask-vie"
+version = "0.1.0"
+description = "Rag which enables to ask question as a VIE for contract informations."
+authors = ["Chloe-adnet-eng <chloe.adnet@icloud.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^4.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
