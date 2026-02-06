@@ -19,3 +19,15 @@ A RAG-based assistant that lets clients ask questions and get answers about thei
    poetry install
    poetry shell
    ```
+
+## Development Roadmap
+
+### Step 1: Document Loading & Embedding (Current)
+Load PDF contracts and generate embeddings locally.
+
+**Success criteria:**
+- ✅ Load a PDF document
+- ✅ Generate embeddings for chunks
+---
+
+*Next steps: Vector store setup → Retriever implementation → LLM integration → Chat interface*
