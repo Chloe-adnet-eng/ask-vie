@@ -19,3 +19,14 @@ repos:
     rev: 7.3.0
     hooks:
     -   id: flake8
+
+-   repo: local
+    hooks:
+    -   id: pytest-cov
+        name: pytest-cov
+        entry: pytest --cov=src --cov-branch --cov-report term-missing --cov-fail-under=80
+        language: system
+        types: [python]
+        stages: [pre-commit]
+        pass_filenames: false
+        always_run: true
