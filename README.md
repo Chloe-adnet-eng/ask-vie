@@ -49,3 +49,19 @@ Load PDF contracts and generate embeddings locally.
 ---
 
 *Next steps: Vector store setup → Retriever implementation → LLM integration → Chat interface*
+
+## Tests
+
+To run the current tests we must use `pytest` and `pytest-cov`:
+
+To run the tests only:
+```bash
+pytest .
+```
+
+To run the coverage test and the tests:
+```bash
+pytest --cov=src --cov-branch --cov-report term-missing --cov-fail-under=80 --cov-report=html
+# To open the report with this last command you can simply run :
+open open htmlcov/index.html
+```
